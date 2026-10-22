@@ -1,0 +1,64 @@
+name: Build LinQigram
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Install NDK 27.2
+        run: |
+          SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          yes | "$SDKMANAGER" --licenses > /dev/null || true
+          "$SDKMANAGER" "ndk;27.2.12479018"
+
+      - name: Write local.properties from secrets
+        env:
+          API_ID: ${{ secrets.API_ID }}
+          API_HASH: ${{ secrets.API_HASH }}
+        run: |
+          printf 'apiId=%s\napiHash=%s\n' "$API_ID" "$API_HASH" > local.properties
+
+      - name: Placeholder google-services.json for our package
+        run: |
+          cat > TMessagesProj/google-services.json <<'JSON'
+          {
+            "project_info": {
+              "project_number": "1234567890",
+              "project_id": "linqigram-placeholder",
+              "storage_bucket": "linqigram-placeholder.appspot.com"
+            },
+            "client": [
+              {
+                "client_info": {
+                  "mobilesdk_app_id": "1:1234567890:android:0123456789abcdef",
+                  "android_client_info": { "package_name": "com.linqi.linqigram" }
+                },
+                "oauth_client": [],
+                "api_key": [ { "current_key": "AIzaSyDummyKeyForLocalBuildOnly00000000" } ],
+                "services": { "appinvite_service": { "other_platform_oauth_client": [] } }
+              }
+            ],
+            "configuration_version": "1"
+          }
+          JSON
+
+      - name: Build afat standalone APK
+        run: ./gradlew :TMessagesProj_App:assembleAfatStandalone --no-daemon
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: linqigram-apk
+          path: TMessagesProj_App/build/outputs/apk/afat/standalone/*.apk
+          if-no-files-found: error

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LinQigram: strings for ported features (subset of Nekogram's strings_neko). -->
+<resources>
+    <string name="CopyID">Copy ID</string>
+    <string name="DatacenterStatusShort">Datacenter</string>
+</resources>

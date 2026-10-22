@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LinQigram: Telegram-style blue gradient background for the adaptive icon -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:startColor="#1E96C8"
+        android:endColor="#37AEE2"
+        android:angle="90" />
+</shape>

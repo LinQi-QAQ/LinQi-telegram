@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LinQigram splash: sakura blooming outward (petals start clustered at the
+     center, slide out along their own axes while the flower scales up and fades in). -->
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:width="108dp"
+            android:height="108dp"
+            android:viewportWidth="108"
+            android:viewportHeight="108">
+            <group
+                android:name="flower"
+                android:pivotX="54"
+                android:pivotY="54"
+                android:scaleX="0.8"
+                android:scaleY="0.8">
+                <path
+                    android:name="bg"
+                    android:fillColor="#29A9EB"
+                    android:fillAlpha="0"
+                    android:pathData="M54,6C80.51,6 102,27.49 102,54C102,80.51 80.51,102 54,102C27.49,102 6,80.51 6,54C6,27.49 27.49,6 54,6Z" />
+                <group android:name="rot0" android:pivotX="54" android:pivotY="54" android:rotation="0">
+                    <group android:name="petal0" android:translateY="9">
+                        <path android:name="path0" android:fillColor="#FFFFFF" android:fillAlpha="0"
+                            android:pathData="M54.00,54.00L52.28,52.47L50.82,50.94L49.49,49.41L48.28,47.88L47.20,46.35L46.26,44.82L45.47,43.29L44.83,41.76L44.37,40.23L44.08,38.70L43.97,37.17L44.04,35.64L44.29,34.11L44.72,32.58L45.31,31.05L46.07,29.52L46.98,27.99L48.03,26.46L49.21,24.93L50.51,23.40L51.89,20.00L54.00,25.78L56.11,20.00L57.49,23.40L58.79,24.93L59.97,26.46L61.02,27.99L61.93,29.52L62.69,31.05L63.28,32.58L63.71,34.11L63.96,35.64L64.03,37.17L63.92,38.70L63.63,40.23L63.17,41.76L62.53,43.29L61.74,44.82L60.80,46.35L59.72,47.88L58.51,49.41L57.18,50.94L55.72,52.47L54.00,54.00Z" />
+                    </group>
+                </group>
+                <group android:name="rot1" android:pivotX="54" android:pivotY="54" android:rotation="72">
+                    <group android:name="petal1" android:translateY="9">
+                        <path android:name="path1" android:fillColor="#FFFFFF" android:fillAlpha="0"
+                            android:pathData="M54.00,54.00L52.28,52.47L50.82,50.94L49.49,49.41L48.28,47.88L47.20,46.35L46.26,44.82L45.47,43.29L44.83,41.76L44.37,40.23L44.08,38.70L43.97,37.17L44.04,35.64L44.29,34.11L44.72,32.58L45.31,31.05L46.07,29.52L46.98,27.99L48.03,26.46L49.21,24.93L50.51,23.40L51.89,20.00L54.00,25.78L56.11,20.00L57.49,23.40L58.79,24.93L59.97,26.46L61.02,27.99L61.93,29.52L62.69,31.05L63.28,32.58L63.71,34.11L63.96,35.64L64.03,37.17L63.92,38.70L63.63,40.23L63.17,41.76L62.53,43.29L61.74,44.82L60.80,46.35L59.72,47.88L58.51,49.41L57.18,50.94L55.72,52.47L54.00,54.00Z" />
+                    </group>
+                </group>
+                <group android:name="rot2" android:pivotX="54" android:pivotY="54" android:rotation="144">
+                    <group android:name="petal2" android:translateY="9">
+                        <path android:name="path2" android:fillColor="#FFFFFF" android:fillAlpha="0"
+                            android:pathData="M54.00,54.00L52.28,52.47L50.82,50.94L49.49,49.41L48.28,47.88L47.20,46.35L46.26,44.82L45.47,43.29L44.83,41.76L44.37,40.23L44.08,38.70L43.97,37.17L44.04,35.64L44.29,34.11L44.72,32.58L45.31,31.05L46.07,29.52L46.98,27.99L48.03,26.46L49.21,24.93L50.51,23.40L51.89,20.00L54.00,25.78L56.11,20.00L57.49,23.40L58.79,24.93L59.97,26.46L61.02,27.99L61.93,29.52L62.69,31.05L63.28,32.58L63.71,34.11L63.96,35.64L64.03,37.17L63.92,38.70L63.63,40.23L63.17,41.76L62.53,43.29L61.74,44.82L60.80,46.35L59.72,47.88L58.51,49.41L57.18,50.94L55.72,52.47L54.00,54.00Z" />
+                    </group>
+                </group>
+                <group android:name="rot3" android:pivotX="54" android:pivotY="54" android:rotation="216">
+                    <group android:name="petal3" android:translateY="9">
+                        <path android:name="path3" android:fillColor="#FFFFFF" android:fillAlpha="0"
+                            android:pathData="M54.00,54.00L52.28,52.47L50.82,50.94L49.49,49.41L48.28,47.88L47.20,46.35L46.26,44.82L45.47,43.29L44.83,41.76L44.37,40.23L44.08,38.70L43.97,37.17L44.04,35.64L44.29,34.11L44.72,32.58L45.31,31.05L46.07,29.52L46.98,27.99L48.03,26.46L49.21,24.93L50.51,23.40L51.89,20.00L54.00,25.78L56.11,20.00L57.49,23.40L58.79,24.93L59.97,26.46L61.02,27.99L61.93,29.52L62.69,31.05L63.28,32.58L63.71,34.11L63.96,35.64L64.03,37.17L63.92,38.70L63.63,40.23L63.17,41.76L62.53,43.29L61.74,44.82L60.80,46.35L59.72,47.88L58.51,49.41L57.18,50.94L55.72,52.47L54.00,54.00Z" />
+                    </group>
+                </group>
+                <group android:name="rot4" android:pivotX="54" android:pivotY="54" android:rotation="288">
+                    <group android:name="petal4" android:translateY="9">
+                        <path android:name="path4" android:fillColor="#FFFFFF" android:fillAlpha="0"
+                            android:pathData="M54.00,54.00L52.28,52.47L50.82,50.94L49.49,49.41L48.28,47.88L47.20,46.35L46.26,44.82L45.47,43.29L44.83,41.76L44.37,40.23L44.08,38.70L43.97,37.17L44.04,35.64L44.29,34.11L44.72,32.58L45.31,31.05L46.07,29.52L46.98,27.99L48.03,26.46L49.21,24.93L50.51,23.40L51.89,20.00L54.00,25.78L56.11,20.00L57.49,23.40L58.79,24.93L59.97,26.46L61.02,27.99L61.93,29.52L62.69,31.05L63.28,32.58L63.71,34.11L63.96,35.64L64.03,37.17L63.92,38.70L63.63,40.23L63.17,41.76L62.53,43.29L61.74,44.82L60.80,46.35L59.72,47.88L58.51,49.41L57.18,50.94L55.72,52.47L54.00,54.00Z" />
+                    </group>
+                </group>
+                <path
+                    android:name="core"
+                    android:fillColor="#29A9EB"
+                    android:fillAlpha="0"
+                    android:pathData="M54,49.5C56.49,49.5 58.5,51.51 58.5,54C58.5,56.49 56.49,58.5 54,58.5C51.51,58.5 49.5,56.49 49.5,54C49.5,51.51 51.51,49.5 54,49.5Z" />
+            </group>
+        </vector>
+    </aapt:attr>
+
+    <target android:name="flower">
+        <aapt:attr name="android:animation">
+            <set android:ordering="together">
+                <objectAnimator android:propertyName="scaleX" android:duration="900"
+                    android:valueFrom="0.8" android:valueTo="1.0" android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in" />
+                <objectAnimator android:propertyName="scaleY" android:duration="900"
+                    android:valueFrom="0.8" android:valueTo="1.0" android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in" />
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="bg">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:propertyName="fillAlpha" android:duration="450"
+                android:valueFrom="0" android:valueTo="1" android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+    <target android:name="petal0">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:propertyName="translateY" android:duration="900"
+                android:valueFrom="9" android:valueTo="0" android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in" />
+        </aapt:attr>
+    </target>
+    <target android:name="petal1">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:propertyName="translateY" android:duration="900"
+                android:valueFrom="9" android:valueTo="0" android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in" />
+        </aapt:attr>
+    </target>
+    <target android:name="petal2">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:propertyName="translateY" android:duration="900"
+                android:valueFrom="9" android:valueTo="0" android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in" />
+        </aapt:attr>
+    </target>
+    <target android:name="petal3">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:propertyName="translateY" android:duration="900"
+                android:valueFrom="9" android:valueTo="0" android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in" />
+        </aapt:attr>
+    </target>
+    <target android:name="petal4">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:propertyName="translateY" android:duration="900"
+                android:valueFrom="9" android:valueTo="0" android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in" />
+        </aapt:attr>
+    </target>
+    <target android:name="path0">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:propertyName="fillAlpha" android:duration="700"
+                android:valueFrom="0" android:valueTo="1" android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+    <target android:name="path1">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:propertyName="fillAlpha" android:duration="700"
+                android:valueFrom="0" android:valueTo="1" android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+    <target android:name="path2">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:propertyName="fillAlpha" android:duration="700"
+                android:valueFrom="0" android:valueTo="1" android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+    <target android:name="path3">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:propertyName="fillAlpha" android:duration="700"
+                android:valueFrom="0" android:valueTo="1" android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+    <target android:name="path4">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:propertyName="fillAlpha" android:duration="700"
+                android:valueFrom="0" android:valueTo="1" android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+    <target android:name="core">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:propertyName="fillAlpha" android:duration="700"
+                android:valueFrom="0" android:valueTo="1" android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+</animated-vector>
