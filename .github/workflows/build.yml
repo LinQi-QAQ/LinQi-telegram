@@ -10,8 +10,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch media submodule (needed by settings.gradle)
-        run: git submodule update --init --depth 1 -- TMessagesProj_Modules/media
+      - name: Fetch media module (needed by settings.gradle)
+        run: |
+          rm -rf TMessagesProj_Modules/media
+          git init TMessagesProj_Modules/media
+          git -C TMessagesProj_Modules/media remote add origin https://github.com/Arseny271/media.git
+          git -C TMessagesProj_Modules/media fetch --depth 1 origin c430d207677071b1873f9f18266d55ec45722180
+          git -C TMessagesProj_Modules/media checkout FETCH_HEAD
 
       - name: Set up JDK 21
         uses: actions/setup-java@v4
