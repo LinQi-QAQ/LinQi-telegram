@@ -61,12 +61,12 @@ jobs:
           }
           JSON
 
-      - name: Build afat standalone APK
-        run: ./gradlew :TMessagesProj_App:assembleAfatStandalone --no-daemon
+      - name: Build afat release APK
+        run: ./gradlew :TMessagesProj_App:assembleAfatRelease --no-daemon
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: linqigram-apk
-          path: TMessagesProj_App/build/outputs/apk/afat/standalone/*.apk
+          path: TMessagesProj_App/build/outputs/apk/afat/release/*.apk
           if-no-files-found: error
